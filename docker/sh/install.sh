@@ -74,8 +74,8 @@ if ! $(wp core is-installed); then
 	#
 	if [[ ${WP_LOCALE} != "en_US" ]]; then
 		wp language core install ${WP_LOCALE} --activate
-		wp language plugin install --all
-		wp language theme install --all
+		wp language plugin install --all ${WP_LOCALE}
+		wp language theme install --all ${WP_LOCALE}
 	fi
 
 fi
