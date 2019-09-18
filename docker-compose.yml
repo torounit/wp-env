@@ -2,7 +2,7 @@ version: "3"
 services:
   nginx:
     shm_size: 64mb
-    image: nginx:1-alpine
+    image: nginx
     depends_on:
       - wordpress
     ports:
@@ -38,7 +38,6 @@ services:
       MYSQL_PASSWORD: "wordpress"
     volumes:
       - mysql:/var/lib/mysql
-      - ./docker/mysql:/docker-entrypoint-initdb.d
 
   installer:
     shm_size: 256mb
