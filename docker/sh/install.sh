@@ -5,9 +5,9 @@ set -x
 #
 WP_VERSION="latest"
 WP_THEME="twentynineteen"
-WP_PORT=${1-80}
+WP_PORT=${1-8080}
 WP_ADMIN_USER="admin"
-WP_ADMIN_PASS="admin"
+WP_ADMIN_PASS="password"
 WP_LOCALE="en_US"
 WP_DEBUG=false
 WP_THEME_UNIT_TEST=false
